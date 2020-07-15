@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <form class="mt-5">
+                <!-- <span style="font-size: 30px"> Hours:</span>  -->
+                <!-- <input type="text" id="hrs" name="hrs" value="0" size="2" maxlength="2" /> -->
+
+                <span style="font-size: 30px"> Minutes:</span>
+
+                <input type="text" id="mns" class="font-weight-bold" name="mns" value="0" size="3"
+                    maxlength="2" />&nbsp;
+                &nbsp;
+
+                <span style="font-size: 30px">Seconds:</span>
+                <input type="text" id="scs" name="scs" value="0" size="2" maxlength="2" />&nbsp; &nbsp;
+                <br />
+                <div class="btn">
+                    <input type="button" id="btnct" class="btn btn-primary btn-sm" value=" Start" />
+                    <input type="button" id="btpause" class="btn btn-danger btn-sm" value="Pause" />
+
+                </div>
+            </form>
+        </div>
+        <div class="row justify-content-center">
+            <div class="countdown-timer">
+                Countdown Timer: &nbsp; <span id="showmns">00</span>:<span id="showscs">00</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
